@@ -1,0 +1,36 @@
+@import "../../../styles/variables";
+
+.myBtn {
+  background-color: transparent;
+  padding: 10px 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 10px;
+  color: #333;
+  font-size: 15px;
+  cursor: pointer;
+  text-transform: uppercase;
+
+  transition: background-color 0.2s ease-in;
+}
+
+.myBtn:hover {
+  background-color: #183eb3;
+  color: #fff;
+}
+
+[data-active="active"] {
+  background-color: royalblue;
+  color: #fff;
+}
+
+body[data-dark="dark"] {
+  .myBtn {
+    background-color: $Light-bg-color;
+    color: #fff;
+  }
+  .myBtn[data-active="active"] {
+    background-color: royalblue;
+    color: #fff;
+  }
+}

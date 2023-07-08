@@ -1,0 +1,43 @@
+@import "../../styles/variables";
+
+.headerInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoLink {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 30px;
+  font-weight: 600;
+  color: $Main-blue-color;
+}
+
+.modeBtn {
+  background-color: transparent;
+  border: none;
+}
+
+.headerAction {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.select {
+  background-color: $Light-blue-bg;
+  padding: 7px 15px 7px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+body[data-dark="dark"] {
+  .select {
+    color: #fff;
+    background-color: $Light-bg-color;
+  }
+}
